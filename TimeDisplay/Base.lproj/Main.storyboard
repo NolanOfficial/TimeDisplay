@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,99 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TimeDisplay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date &amp; Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFH-WW-l3I">
+                                <rect key="frame" x="20" y="106" width="374" height="28"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downloading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ims-AE-cpA">
+                                <rect key="frame" x="20" y="142" width="374" height="22"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Los Angeles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L31-7A-aHC">
+                                <rect key="frame" x="20" y="229" width="374" height="28"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downloading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gv2-gr-3Yh">
+                                <rect key="frame" x="20" y="265" width="374" height="22"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eh6-hg-aYp">
+                                <rect key="frame" x="20" y="365" width="374" height="28"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downloading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfD-AF-gtu">
+                                <rect key="frame" x="20" y="401" width="374" height="22"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdu-vu-wUp">
+                                <rect key="frame" x="20" y="496" width="374" height="28"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downloading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILZ-ZV-iKx">
+                                <rect key="frame" x="20" y="532" width="374" height="22"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Eh6-hg-aYp" firstAttribute="trailing" secondItem="DfD-AF-gtu" secondAttribute="trailing" id="699-Fu-Qgl"/>
+                            <constraint firstItem="L31-7A-aHC" firstAttribute="top" secondItem="Ims-AE-cpA" secondAttribute="bottom" constant="65" id="6Wz-Bg-iRc"/>
+                            <constraint firstItem="Gv2-gr-3Yh" firstAttribute="trailing" secondItem="Eh6-hg-aYp" secondAttribute="trailing" id="8z6-df-xtM"/>
+                            <constraint firstItem="Gv2-gr-3Yh" firstAttribute="top" secondItem="L31-7A-aHC" secondAttribute="bottom" constant="8" symbolic="YES" id="Ahn-Uk-uwK"/>
+                            <constraint firstItem="Ims-AE-cpA" firstAttribute="leading" secondItem="L31-7A-aHC" secondAttribute="leading" id="H4b-mn-lC5"/>
+                            <constraint firstItem="dFH-WW-l3I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JQn-nS-dQP"/>
+                            <constraint firstItem="L31-7A-aHC" firstAttribute="trailing" secondItem="Gv2-gr-3Yh" secondAttribute="trailing" id="JXv-jc-GEv"/>
+                            <constraint firstItem="Cdu-vu-wUp" firstAttribute="trailing" secondItem="ILZ-ZV-iKx" secondAttribute="trailing" id="L7w-nv-yyT"/>
+                            <constraint firstItem="DfD-AF-gtu" firstAttribute="leading" secondItem="Cdu-vu-wUp" secondAttribute="leading" id="NiX-rd-pic"/>
+                            <constraint firstItem="Cdu-vu-wUp" firstAttribute="leading" secondItem="ILZ-ZV-iKx" secondAttribute="leading" id="QEk-rg-XdM"/>
+                            <constraint firstItem="DfD-AF-gtu" firstAttribute="top" secondItem="Eh6-hg-aYp" secondAttribute="bottom" constant="8" symbolic="YES" id="Sw0-0h-cRn"/>
+                            <constraint firstItem="dFH-WW-l3I" firstAttribute="leading" secondItem="Ims-AE-cpA" secondAttribute="leading" id="TXT-c3-Na2"/>
+                            <constraint firstItem="L31-7A-aHC" firstAttribute="leading" secondItem="Gv2-gr-3Yh" secondAttribute="leading" id="YTH-lX-Fkm"/>
+                            <constraint firstItem="Gv2-gr-3Yh" firstAttribute="leading" secondItem="Eh6-hg-aYp" secondAttribute="leading" id="bMa-jZ-6ss"/>
+                            <constraint firstItem="dFH-WW-l3I" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="eCV-E9-m61"/>
+                            <constraint firstItem="ILZ-ZV-iKx" firstAttribute="top" secondItem="Cdu-vu-wUp" secondAttribute="bottom" constant="8" symbolic="YES" id="eI6-ie-pZm"/>
+                            <constraint firstItem="Cdu-vu-wUp" firstAttribute="top" secondItem="DfD-AF-gtu" secondAttribute="bottom" constant="73" id="efa-tQ-uSK"/>
+                            <constraint firstItem="DfD-AF-gtu" firstAttribute="trailing" secondItem="Cdu-vu-wUp" secondAttribute="trailing" id="fE4-eX-rYK"/>
+                            <constraint firstItem="Ims-AE-cpA" firstAttribute="top" secondItem="dFH-WW-l3I" secondAttribute="bottom" constant="8" symbolic="YES" id="g1v-1a-xOg"/>
+                            <constraint firstItem="Eh6-hg-aYp" firstAttribute="leading" secondItem="DfD-AF-gtu" secondAttribute="leading" id="k1I-am-27z"/>
+                            <constraint firstItem="Ims-AE-cpA" firstAttribute="trailing" secondItem="L31-7A-aHC" secondAttribute="trailing" id="kub-dJ-jQb"/>
+                            <constraint firstItem="Eh6-hg-aYp" firstAttribute="top" secondItem="Gv2-gr-3Yh" secondAttribute="bottom" constant="78" id="nVg-oX-CzN"/>
+                            <constraint firstItem="dFH-WW-l3I" firstAttribute="trailing" secondItem="Ims-AE-cpA" secondAttribute="trailing" id="nVv-uU-riK"/>
+                            <constraint firstItem="dFH-WW-l3I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="x5L-vb-EwX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="chicagoDownload" destination="DfD-AF-gtu" id="D8m-aZ-189"/>
+                        <outlet property="dateAndTimeDownload" destination="Ims-AE-cpA" id="4po-1D-9cV"/>
+                        <outlet property="losAngelesDownload" destination="Gv2-gr-3Yh" id="e2B-9l-maL"/>
+                        <outlet property="newYorkDownload" destination="ILZ-ZV-iKx" id="4Sw-79-tqB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-78.260869565217391" y="133.92857142857142"/>
         </scene>
     </scenes>
 </document>
