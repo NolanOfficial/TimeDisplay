@@ -5,7 +5,7 @@ An app example that displays your current time with real time updates.
 based on those who live in Phoenix's time zone. There are no API downloads in this, just an example of how it would be coded and displayed.***
 
 ## What I Learned
-* Incorporating 'Date()' to find the user's current exact time 
+* Incorporating 'Date()' to find the user's current exact time & date  
 * Configuring date layouts for specific formats  
 * Adding time intervals to allow for constant time updates 
 
